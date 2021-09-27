@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>ANZ104AngularDemo.Application</AssemblyName>
+    <PackageId>ANZ104AngularDemo.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>ANZ104AngularDemo</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="6.4.0" />
+    <PackageReference Include="NPOI" Version="2.5.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ANZ104AngularDemo.Application.Shared\ANZ104AngularDemo.Application.Shared.csproj" />
+    <ProjectReference Include="..\ANZ104AngularDemo.Core\ANZ104AngularDemo.Core.csproj" />
+    <ProjectReference Include="..\ANZ104AngularDemo.EntityFrameworkCore\ANZ104AngularDemo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
